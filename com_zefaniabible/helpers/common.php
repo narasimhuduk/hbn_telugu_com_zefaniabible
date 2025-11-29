@@ -279,7 +279,13 @@ class ZefaniabibleCommonHelper
 	{
 		$urlPrepend = "document.location.href=('";
 		$urlPostpend = "')";	
-		$str_other_url_var = '';	
+		$str_other_url_var = '';
+		foreach($item->arr_reading as $keyIndex => $arr_list_reading)
+		{	
+			$dayPortionRef.=$this->fnc_make_scripture_title($arr_list_reading->book_id, $arr_list_reading->begin_chapter, $arr_list_reading->begin_verse, $arr_list_reading->end_chapter, $arr_list_reading->end_verse);
+			if($keyIndex == 0)
+			$dayPortionRef.=', ';
+		}
 		if(($item->flg_show_commentary)and(count($item->arr_commentary_list) > 1))
 		{
 				$str_other_url_var .= "&com=".$item->str_commentary;
@@ -326,7 +332,8 @@ class ZefaniabibleCommonHelper
 		}
 		else
 		{
-			echo JText::_('ZEFANIABIBLE_READING_PLAN_DAY')." ".($item->int_day_number);			
+			echo JText::_('ZEFANIABIBLE_READING_PLAN_DAY')." ".($item->int_day_number);
+			echo '<div class="day-portion-ref">'.$dayPortionRef.'</div>';
 		}
 		
 		// fix tommorow when greater than max days in plan
