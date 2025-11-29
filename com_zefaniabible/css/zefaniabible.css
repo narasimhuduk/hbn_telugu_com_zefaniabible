@@ -1,0 +1,465 @@
+/**                               ______________________________________________
+*                          o O   |                                              |
+*                 (((((  o      <  Generated with Cook           (100% Vitamin) |
+*                ( o o )         |______________________________________________|
+* --------oOOO-----(_)-----OOOo---------------------------------- www.j-cook.pro --- +
+* @version		1.6
+* @package		ZefaniaBible
+* @subpackage	
+* @copyright	Missionary Church of Grace
+* @author		Andrei Chernyshev - www.missionarychurchofgrace.org - andrei.chernyshev1@gmail.com
+* @license		GNU/GPL
+*
+* /!\  Joomla! is free software.
+* This version may have been modified pursuant to the GNU General Public License,
+* and as distributed it includes or is derivative of works licensed under the
+* GNU General Public License or other free or open source software licenses.
+*
+*             .oooO  Oooo.     See COPYRIGHT.php for copyright notices and details.
+*             (   )  (   )
+* -------------\ (----) /----------------------------------------------------------- +
+*               \_)  (_/
+*/
+.zef_email_img
+{
+	width:24px;
+	height:24px;
+	border:none;	
+}
+.zef_email_button, .zef_reading_rss, .zef_reading_ical
+{
+	float:right;
+	margin-top:3px;
+	margin-right:3px;	
+}
+.zef_bible_Chapter
+{
+
+	border-top:none;
+	border-bottom:none;
+	/*border: 1px solid #705132;*/
+}
+.zef_bot_pagination
+{
+	/*border: 1px solid #705132;*/
+	border-top:none;
+	/*background-color:#A69172;*/
+}
+.zef_top_pagination
+{
+	/*background-color:#A69172;*/
+}
+.zef_overview_plan
+{
+	width:98%;	
+}
+.zef_day_number, .zef_reading
+{
+	float:left;	
+	margin-right: 5px;
+}
+.zef_legend, .zef_bible_Header_Label_Plan
+{
+	/*background-color:#A69172;
+	border: 1px solid #705132;*/
+	border-bottom:none;
+	
+}
+.zef_book
+{
+	margin-left:3px;
+	margin-right:3px;
+	float:left;
+}
+.zef_Chapter
+{
+	float:left;	
+	margin-left:3px;
+	margin-right:3px;
+}
+
+.zef_verse
+{
+	float:left;
+	max-width:90%;
+	width:auto;
+}
+.zef_verse_number
+{
+	float:left;
+	margin-right:3px;	
+	margin-left:3px;
+	width:2%;
+}
+.zef_bible_Header_Label, .zef_reading_name, .zef_bible_Header_Label_Plan, .zef_commentary_book, .zef_strong_dic_name, .zef_calendar_month_name
+{
+	text-align:center;
+	line-height:40px;
+	font-size:xx-large;	
+	font-weight:bolder;
+}
+
+.zef_bible_Header_Label_Plan
+{
+	border-top:none;
+}
+.zef_footer
+{
+	border-top:none;
+	min-height:30px;
+	text-align:center;
+}
+.zef_bot_pagination, .zef_top_pagination
+{
+	min-height:30px;
+	text-align:center;	
+}
+.zef_verse_number
+{
+	font-size:10px;
+}
+.odd, .even, .zef_book_caption
+{
+	padding-left:5px;
+	padding-right:5px;	
+}
+.odd:hover, .even:hover, .zef_book_caption:hover
+{
+	/*background-color:#A58F6F;*/
+}
+.zef_bible_label, .zef_chapter_label, .zef_book_label, .zef_reading_label, .zef_commentary_label, .zef_dictionary_label
+{
+	font-size:20px;
+	float:left;	
+}
+.zef_bible_label
+{
+	margin-left:10px;
+}
+.zef_bible
+{
+	float:left;	
+} 
+.zef_book_caption
+{
+	max-width:95%;	
+	float:left;
+}
+#zef_links
+{
+	margin-left:5px; 	
+}
+.zef_compare_bibles
+{
+	width:46%;
+	float:left;
+}
+.zef_player
+{
+	width:100%;	
+}
+.zef_player-1, .zef_player-2
+{
+	width:46%;
+	float:left;
+}
+.zef_commentary_heading
+{
+	font-weight:bold;
+	font-size:24px;
+}
+.zef_commentary_hash, .zef_reference_hash
+{
+	float:right;	
+}
+.zef_verse_header
+{
+	font-weight:bold;
+	font-size:16px;	
+}
+.zef_error_message
+{
+	font-weight:bold;
+	font-size:16px;	
+}
+.zef_reference, .zef_content_verse_link
+{
+	float:right;	
+}
+.zef_reference_word
+{
+	font-size:22px;
+	font-weight:bold;	
+	padding-top: 10px;
+    padding-bottom: 10px;
+    color: #F00;
+    text-align: center;
+}
+.zef_commentary_title, .zef_reference_title 
+{
+	font-size:24px;
+	font-weight:bold;
+	text-align:center;
+}
+.zef_bible_Header_Label_h1
+{
+	font-size:1em;	 
+}
+#zef_Bible_Main_verse_tmpl_comp
+{
+	font-size:22px;	
+}
+#zef_Bible_Main_tmpl_comp .zef_verse_number
+{
+	margin-right:10px !important;	
+	
+}
+#zef_day_jump
+{
+	max-width:150px;
+}
+#zef_strong_link
+{
+	font-size:10px;
+	font-style:italic;
+}
+.zef_strong_id
+{
+	font-weight:bold;	
+}
+.zef_commentary_label, .zef_dictionary_label, .zef_dictionary_strong_label
+{
+	margin-left:5px;
+	margin-right:5px;
+}
+.zef_Chapter #chapter
+{
+	width:auto;
+	max-width:75px;	
+}
+.zef_book #book, .zef_bible #bible, .zef_commentary #commentary, .zef_dictionary #dictionary, .zef_reading_plan #reading, #zef_day_jump, zef_reading_plan #zef_subs_plans, #zef_subs_send_reading, #zef_subs_send_verse
+{
+	width:auto;
+	max-width:250px;	
+}
+#zef_dictionary_div, #zef_commentary_div, .zef_commentary, .zef_dictionary, .zef_dictionary_strong_box,.zef_dictionary_strong_label,.zef_dictionary_strong_input
+{
+	float:left;	
+}
+.zef_modal
+{
+	font-size:1.3em !important;
+}
+.zef_modal .zef_scripture div
+{
+	float:left;
+	margin-right:3px;
+}
+.zef_modal .zef_alias, .zef_modal .zef_scripture
+{
+	margin-top:5px;	
+}
+#zef_button_begin_chap, #zef_button_begin_verse, #zef_button_end_chap, #zef_button_end_verse
+{
+	max-width:25px;	
+}
+.zef_modal label
+{
+	display:inline !important;
+}
+#zef_bible_link_bible
+{
+	float:left;	
+}
+.zef_books_column
+{
+	width:50%;
+	float:left;
+}
+.zef_books_list .zef_book
+{
+	width:100%;	
+}
+.zef_book_chapters
+{
+	float:left;
+	margin-left:5px;	
+}
+.zef_books_accross_names
+{
+	width:20%;	
+}
+.zef_calendar_day, .zef_calendar_day_empty
+{
+	float:left;
+	height:125px;
+	min-height:75px;
+	width:14%;
+	border-width:1px;
+	border-style: solid;
+	border-right:none;
+	border-bottom:none;
+}
+.zef_calendar_day_names
+{
+	float:left;
+	width:14%;	
+}
+.zef_calendar_month_prev, .zef_calendar_month_name, .zef_calendar_month_next
+{
+	text-align:center;
+	float:left;
+}
+.zef_calendar_month_prev, .zef_calendar_month_next
+{
+	width:25%;
+	padding-top:10px;
+}
+.zef_calendar_month_name
+{
+	width:50%;
+}
+.zef_calendar_day_names
+{
+	text-align:center;	
+}
+
+.zef_calendar_link
+{
+	border-width:1px;
+	border-style: solid;
+	border-radius:3px;
+	padding:3px;
+}
+.zef_calendar_day a:hover
+{
+	text-decoration:none;	
+}
+.zef_calendar_link_div
+{
+	padding-bottom:7px;	
+	float:left;
+	padding-left:7px;
+}
+.zef_calendar_sat
+{
+	border-right:1px solid;
+}
+.zef_calendar_last_row
+{
+	border-bottom:1px solid;
+}
+
+/* custom css*/
+
+.subhead {
+    float: left;
+    color: #fff;
+    background-color: #013a67;
+    width: 100%;
+    padding: 4px 3px 5px 3px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+    -webkit-border-top-left-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -moz-border-radius-topright: 6px;
+    border-top-right-radius: 6px;
+}
+.visible-lg, .visible-md, .visible-sm, .visible-xs {
+    display: none!important;
+}
+.subhead2 {
+    float: left;
+    color: #fff;
+    background-color: #bbad89;
+    width: 100%;
+    padding: 4px 3px 5px 3px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 12px 0 6px 0;
+    -webkit-border-top-left-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -moz-border-radius-topright: 6px;
+    border-top-right-radius: 6px;
+}
+
+.tskref {
+    float: left;
+    width: 49%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.tskref a:link, .tskref a:visited, .tskref a:active, .tskref a:focus {
+    display: inline-block;
+    color: #00f;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 0 8px 0 8px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+}
+
+.tskref a:hover {
+    color: #fff!important;
+    background-color: #909090;
+    text-decoration: none;
+}
+
+.vlink:link, .vlink:visited, .vlink:active, .vlink:focus {
+    color: #00f;
+    font-size: 19px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.tskrefhighlight {
+    color: #fff!important;
+    background-color: #0348f3;
+}
+
+@media only screen and (min-width: 1px) {
+    .tskref {
+        width: 99%;
+        line-height: 1.8em;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    .tskref {
+        width: 49%;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .tskref {
+        width: 49%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .tskref {
+        width: 33%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .tskref {
+        width: 49%;
+        line-height: 1.4em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .tskref {
+        width: 33%;
+    }
+}
+
+
