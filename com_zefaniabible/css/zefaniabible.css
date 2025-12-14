@@ -424,6 +424,15 @@
     background-color: #0348f3;
 }
 
+.day-portion-ref {display: inline-block;}
+.zef_footer > .zef_bot_pagination a.next-day{float: right;}
+
+@media only screen and (max-width: 1000px) {
+    .zef_bot_pagination #zef_links {
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 1px) {
     .tskref {
         width: 99%;

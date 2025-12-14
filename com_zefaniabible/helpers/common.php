@@ -332,8 +332,8 @@ class ZefaniabibleCommonHelper
 		}
 		else
 		{
-			echo JText::_('ZEFANIABIBLE_READING_PLAN_DAY')." ".($item->int_day_number);
-			echo '<div class="day-portion-ref">'.$dayPortionRef.'</div>';
+			//echo JText::_('ZEFANIABIBLE_READING_PLAN_DAY')." ".($item->int_day_number);
+			echo '<div class="day-portion-ref">'.JText::_('ZEFANIABIBLE_READING_PLAN_DAY')." ".($item->int_day_number).' : '.$dayPortionRef.'</div>';
 		}
 		
 		// fix tommorow when greater than max days in plan
@@ -356,7 +356,7 @@ class ZefaniabibleCommonHelper
 		}
 		else
 		{
-			echo "<a title='".JText::_('ZEFANIABIBLE_BIBLE_NEXT_DAY_READING')."' id='zef_links' href='".$url[3]."'>".JText::_('ZEFANIABIBLE_READING_PLAN_DAY')." ".$int_tommorow."</a> ";
+			echo "<a class='next-day' title='".JText::_('ZEFANIABIBLE_BIBLE_NEXT_DAY_READING')."' id='zef_links' href='".$url[3]."'>".JText::_('ZEFANIABIBLE_READING_PLAN_DAY')." ".$int_tommorow."</a> ";
 		}
 	}	
 	public function fnc_find_bible_name($arr_Bibles, $str_Bible_Version)
@@ -1019,7 +1019,7 @@ class ZefaniabibleCommonHelper
 				$str_output .= '<a title="'. JText::_('COM_ZEFANIA_BIBLE_SCRIPTURE_BIBLE_LINK')." ".'" target="blank" href="index.php?view=references&option=com_zefaniabible&tmpl=component&'
 								.'bible='.$item->str_Bible_Version.'&book='.$int_book_id.'&chapter='.$int_chapter_id.'&verse='.$int_verse_id.
 								'" class="modal" rel="{handler: \'iframe\', size: {x:'.$item->str_commentary_width.',y:'.$item->str_commentary_height.'}}">';
-				$str_output .= JText::_('ZEFANIABIBLE_BIBLE_REFERENCE_LINK').'</a>';
+				$str_output .= 'TSK </a>';
 				break;				
 			}
 		}

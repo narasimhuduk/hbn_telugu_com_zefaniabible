@@ -116,7 +116,10 @@ $mdl_common 	= new ZefaniabibleCommonHelper;
                     ?>              
           </div>
 	</div> 
-	<article><?php echo $mdl_common->fnc_output_reading_plan($this->item); ?></article>
+	<article><div class="custom_dictionary_but readon" >Hebrew/Greek Numbers <select name="hebrew_greek_show_hide" id="hebrew_greek_show_hide"><option value="Show">Show</option><option value="Hide">Hide</option></select></div>
+                <div class="custom_references_but readon" >TSK References <select name="tsk_references_show_hide" id="tsk_references_show_hide"><option value="Show">Show</option><option value="Hide">Hide</option></select></div>
+				<div style="clear:both;"></div>
+				<?php echo $mdl_common->fnc_output_reading_plan($this->item); ?></article>
         <div class="zef_footer">
 			<div class="zef_bot_pagination">        
                 <?php 
