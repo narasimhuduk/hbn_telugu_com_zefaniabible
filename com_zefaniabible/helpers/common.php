@@ -284,7 +284,7 @@ class ZefaniabibleCommonHelper
 		{	
 			$dayPortionRef.=$this->fnc_make_scripture_title($arr_list_reading->book_id, $arr_list_reading->begin_chapter, $arr_list_reading->begin_verse, $arr_list_reading->end_chapter, $arr_list_reading->end_verse);
 			if($keyIndex == 0)
-			$dayPortionRef.=', ';
+			$dayPortionRef.=' & ';
 		}
 		if(($item->flg_show_commentary)and(count($item->arr_commentary_list) > 1))
 		{

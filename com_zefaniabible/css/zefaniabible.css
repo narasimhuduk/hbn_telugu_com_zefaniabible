@@ -426,6 +426,7 @@
 
 .day-portion-ref {display: inline-block;}
 .zef_footer > .zef_bot_pagination a.next-day{float: right;}
+.zef_top_pagination .day-portion-ref {font-size:36px;}
 
 @media only screen and (max-width: 1000px) {
     .zef_bot_pagination #zef_links {
