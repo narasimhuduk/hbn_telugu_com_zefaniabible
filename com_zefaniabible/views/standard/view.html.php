@@ -140,6 +140,7 @@ class ZefaniabibleViewStandard extends JViewLegacy
 		$item->str_collation	= 	$mdl_default->_buildQuery_collation();
 		$item->arr_Bibles 		= 	$mdl_default->_buildQuery_Bibles_Names();
 		$item->arr_Chapter 		= 	$mdl_default->_buildQuery_Chapter($item->int_Bible_Chapter,$item->int_Bible_Book_ID,$item->str_Bible_Version);
+		$item->arr_Chapter_eng 		= 	$mdl_default->_buildQuery_Chapter($item->int_Bible_Chapter,$item->int_Bible_Book_ID, 'english-kjv');
 		$item->arr_meta			= 	$mdl_default->_buildQuery_meta($item->str_Bible_Version, "bible");
 		
 	//	echo '<pre>=='.$item->str_Bible_Version;

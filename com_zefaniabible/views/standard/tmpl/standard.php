@@ -180,7 +180,7 @@ class StandardView {
                         
                         </div>
                     <?php if(($item->flg_use_bible_selection)and(count($item->arr_Bibles) > 1)){?>
-                        <div class="zef_bible_label"><?php echo JText::_('ZEFANIABIBLE_BIBLE_VERSION');?></div>
+                        <!--<div class="zef_bible_label"><?php //echo JText::_('ZEFANIABIBLE_BIBLE_VERSION');?></div>-->
                          
                     <?php }else{
                             echo '<input type="hidden" name="bible" value="'.$item->str_Bible_Version.'" />';
@@ -195,9 +195,10 @@ class StandardView {
                     <?php if($item->str_tmpl == "component"){?>
                         <div style="clear:both;"></div>
                     <?php }?>
-                     
-                    <div class="custom_dictionary_but readon" >Hebrew/Greek Numbers <select name="hebrew_greek_show_hide" id="hebrew_greek_show_hide"><option value="Show">Show</option><option value="Hide">Hide</option></select></div>
-                    <div class="custom_references_but readon" >TSK References <select name="tsk_references_show_hide" id="tsk_references_show_hide"><option value="Show">Show</option><option value="Hide">Hide</option></select></div>
+                    
+                    <div class="custom_dictionary_but readon" ><label>KJV English <input type="checkbox" id="kjv_english" name="kjv_english" value="Show"></label></div> 
+                    <div class="custom_dictionary_but readon" ><label>Hebrew/Greek Numbers <input type="checkbox" id="hebrew_greek_show_hide" name="hebrew_greek_show_hide" value="Show"></label></div>
+                    <div class="custom_dictionary_but readon" ><label>TSK References <input type="checkbox" id="tsk_references_show_hide" name="tsk_references_show_hide" value="Show"></label></div>
                     <div style="clear:both;"></div>
                     <?php if($item->flg_show_commentary){ 
                                 if(count($item->arr_commentary_list)> 1){
@@ -254,7 +255,7 @@ class StandardView {
                         <?php
                         $x = 0;
                         $str_Chapter_Output = '';
-                        foreach ($item->arr_Chapter as $arr_verse)
+                        foreach ($item->arr_Chapter as $arr_verse_key => $arr_verse)
                         {
                             if($item->flg_show_dictionary == 1)
                             {
@@ -280,7 +281,9 @@ class StandardView {
                                 echo '<div class="even">'; 
                             }
                             
-                            echo "<div class='zef_verse_number'>".$arr_verse->verse_id."</div><div class='zef_verse'>".$arr_verse->verse."</div>";
+                            $arr_verse_eng = $item->arr_Chapter_eng[$arr_verse_key];
+                            
+                            echo "<div class='zef_verse_number'>".$arr_verse->verse_id."</div><div class='zef_verse'>".$arr_verse->verse."<div class='zef_verse_english'>".$arr_verse_eng->verse."</div></div>";
                             $item->str_commentary_width = 801;
                             
                             if($item->flg_show_references)
