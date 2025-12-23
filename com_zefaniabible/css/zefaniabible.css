@@ -117,6 +117,7 @@
 .zef_verse_number
 {
 	font-size:10px;
+	padding-top: 8px;
 }
 .odd, .even, .zef_book_caption
 {
@@ -431,6 +432,8 @@
     margin-bottom: 15px;
     margin-top: -10px;
 }
+.custom_dictionary_but.readon label, .custom_dictionary_but.readon input{cursor:pointer}
+
 @media only screen and (max-width: 1000px) {
     .zef_bot_pagination #zef_links {
         display: none;
