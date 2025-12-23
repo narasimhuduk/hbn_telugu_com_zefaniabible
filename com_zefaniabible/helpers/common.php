@@ -765,10 +765,10 @@ class ZefaniabibleCommonHelper
 			require_once(JPATH_COMPONENT_SITE.'/helpers/audioplayer.php');
 			$mdl_audio = new ZefaniaAudioPlayer;
 
-			foreach($item->arr_plan as $reading)
+			foreach($item->arr_plan as $reading_key => $reading)
 			{
 				$cnt_verse_count = count($reading);
-				foreach($reading as $plan)
+				foreach($reading as $plan_key => $plan)
 				{	
 					if (($plan->book_id > $book)or($plan->chapter_id > $chap))
 					{					
@@ -842,8 +842,8 @@ class ZefaniabibleCommonHelper
 							$plan->verse = preg_replace('/(?=\S)([HG](\d{1,4}))/iu','',$plan->verse);
 						}					
 					}
-					
-					$str_chapter .=  "<div class='zef_verse_number'>".$plan->verse_id."</div><div class='zef_verse'>".$plan->verse."</div>";
+					$eng_plan = $item->arr_plan_english[$reading_key][$plan_key];
+					$str_chapter .=  "<div class='zef_verse_number'>".$plan->verse_id."</div><div class='zef_verse'>".$plan->verse."<div class='zef_verse_english'>".$eng_plan->verse."</div></div>";
 
 					if($item->flg_show_references)
 					{				

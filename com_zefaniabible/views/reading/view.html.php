@@ -152,6 +152,7 @@ class ZefaniabibleViewReading extends JViewLegacy
 		$item->obj_bible_Bible_dropdown			= 	$mdl_common->fnc_bible_name_dropdown($item->arr_Bibles,$item->str_Bible_Version);
 		$item->str_reading_plan_name			= 	$mdl_common->fnc_find_reading_name($item->arr_reading,$item->str_reading_plan);
 		$item->arr_plan							= 	$mdl_default->_buildQuery_current_reading($item->arr_reading, $item->str_Bible_Version);
+		$item->arr_plan_english							= 	$mdl_default->_buildQuery_current_reading($item->arr_reading, 'english-kjv');
 		$item->cnt_chapters						=	$mdl_common->fnc_count_chapters($item->arr_reading);
 		$item->str_description 					= 	$mdl_common->fnc_make_description($item->arr_plan[0]);
 		$item->arr_meta							= 	$mdl_default->_buildQuery_meta($item->str_Bible_Version, "bible");
